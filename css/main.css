@@ -42,6 +42,10 @@ p {
     padding: 0 30px;
 }
 
+ul {
+  margin: 0;
+}
+
 /*The widths are in a percentage!*/
 header {
 	height: 110px;
@@ -61,6 +65,7 @@ header h1 span {
 
 header nav {
 	padding: 20px 0;
+  width: 100%;
 }
 header nav ul {
 	margin: 0;
