@@ -1,5 +1,10 @@
+html {
+  font-size: 16px;
+}
+
 body {
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  font-size: 1em;
 }
 
 body, .container, header, .top-section, .bottom-section, footer {
@@ -9,8 +14,9 @@ body, .container, header, .top-section, .bottom-section, footer {
 }
 
 .container{
-	max-width: 1200px;
-	margin: 0 auto;
+  flex-flow: row wrap;
+  max-width: 1200px;
+  width: 90%;
 }
 
 h1,
@@ -21,17 +27,17 @@ h3 {
 	font-weight: 700;
 }
 h1 {
-	font-size: 30px;
+	font-size: 1.875em;
 }
 h2 {
-	font-size: 18px;
+	font-size: 1.125em;
 }
 h3 {
-	font-size: 12px;
+	font-size: .75em;
 }
 
 p {
-	font-size: 14px;
+	font-size: .875em;
 	line-height: 21px;
     padding: 0 30px;
 }
@@ -40,11 +46,12 @@ p {
 header {
 	height: 110px;
 	border-bottom: 3px solid #77a466;
-	margin: 0 auto;
+	margin: 30px auto;
+  justify-content: space-between;
+  width: 100%;
 }
 
 header h1 {
-	float: left;
 	margin: 0;
 	padding: 38px 0;
 }
@@ -53,7 +60,6 @@ header h1 span {
 }
 
 header nav {
-	float: right;
 	padding: 46px 0;
 }
 header nav ul {
@@ -63,7 +69,7 @@ header nav ul {
 header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
-	font-size: 14px;
+	font-size: .875em;
 	padding: 0 10px;
 	display: inline;
 }
@@ -73,15 +79,13 @@ header nav ul li a{
 }
 
 /*The widths are in a percentage!*/
-.top-section,
-.bottom-section {
-	margin: 0 auto;
-	clear: both;
+.top-section {
+  flex-flow: column;
+  width: 100%;
 }
 
 .main-image {
 	height: auto;
-	float: left;
 }
 .main-image img {
 	width: 100%;
@@ -90,7 +94,6 @@ header nav ul li a{
 
 .main-title {
 	height: auto;
-	float: left;
 }
 .main-title h2 {
 	text-align: left;
@@ -99,8 +102,12 @@ header nav ul li a{
 }
 .main-title p {
 	padding: 0;
-	font-size: 16px;
+	font-size: 1em;
 	line-height: 25px;
+}
+
+.bottom-section {
+  align-items: flex-start;
 }
 
 .section-one,
@@ -108,7 +115,6 @@ header nav ul li a{
 .section-three {
 	width: 33%;
 	height: auto;
-	float: left;
 	border-top: 1px solid #eee;
 }
 
@@ -137,26 +143,27 @@ header nav ul li a{
 
 .reviews {
 	color: #333;
-	font-size: 16px;
+	font-size: 1em;
 	line-height: 21px;
 }
 
 .address {
-	font-size: 16px;
+	font-size: 1em;
 	line-height: 24px;
 }
 
 /*The widths are in a percentage!*/
 footer {
+  align-items: flex-end;
 	height: 50px;
 	border-top: 3px solid #eee;
-	margin: 0 auto;
-	clear: both;
+	margin: 50px auto;
 	text-align: center;
+  width: 100%;
 }
 footer span {
 	font-family: 'Galada', cursive;
 	text-transform: lowercase;
 	color: #77a466;
-	font-size: 14px;
+	font-size: .875em;
 }
