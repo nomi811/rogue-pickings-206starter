@@ -47,20 +47,20 @@ header {
 	height: 110px;
 	border-bottom: 3px solid #77a466;
 	margin: 30px auto;
-  justify-content: space-between;
+  flex-flow: column;
+  justify-content: center;
   width: 100%;
 }
 
 header h1 {
 	margin: 0;
-	padding: 38px 0;
 }
 header h1 span {
 	color: #77a466;
 }
 
 header nav {
-	padding: 46px 0;
+	padding: 20px 0;
 }
 header nav ul {
 	margin: 0;
@@ -108,28 +108,22 @@ header nav ul li a{
 
 .bottom-section {
   align-items: flex-start;
+  flex-flow: column;
 }
 
 .section-one,
 .section-two,
 .section-three {
-	width: 33%;
+	width: 100%;
 	height: auto;
 	border-top: 1px solid #eee;
 }
 
-.section-one h3 {
-	padding: 10px 0;
-}
-
-.section-two {
-	border-left: 1px solid #eee;
-	border-right: 1px solid #eee;
-}
-
-.section-two h3,
+.section-one h3, .section-two h3,
 .section-three h3 {
 	padding: 10px 30px;
+  display: flex;
+  justify-content: center;
 }
 
 .menu {
@@ -137,7 +131,6 @@ header nav ul li a{
 	padding: 0;
 }
 .menu li {
-	padding: 10px 0;
 	color:#77a466;
 }
 
@@ -145,11 +138,13 @@ header nav ul li a{
 	color: #333;
 	font-size: 1em;
 	line-height: 21px;
+  padding: 0;
 }
 
 .address {
 	font-size: 1em;
 	line-height: 24px;
+  padding: 0;
 }
 
 /*The widths are in a percentage!*/
@@ -166,4 +161,34 @@ footer span {
 	text-transform: lowercase;
 	color: #77a466;
 	font-size: .875em;
+}
+
+/*----------TABLET STYLES-------------*/
+@media all and (min-width: 768px) {
+
+}
+
+/*------------DESKTOP STYLES-------------*/
+@media all and (min-width: 1200px) {
+  .section-two {
+    border-left: 1px solid #eee;
+  	border-right: 1px solid #eee;
+  }
+
+  .section-one h3 {
+  	/* padding: 10px 0; */
+  }
+
+  header h1 {
+  	margin: 0;
+  	padding: 38px 0;
+  }
+
+  header nav {
+  	padding: 46px 0;
+  }
+
+  .menu li {
+  	padding: 10px 0;
+  }
 }
