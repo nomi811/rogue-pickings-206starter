@@ -2,6 +2,12 @@ body {
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
 }
 
+body, .container, header, .top-section, .bottom-section, footer {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
 .container{
 	max-width: 1200px;
 	margin: 0 auto;
