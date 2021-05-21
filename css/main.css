@@ -170,15 +170,36 @@ footer span {
 
 /*------------DESKTOP STYLES-------------*/
 @media all and (min-width: 1200px) {
+  .bottom-section {
+    flex-flow: row;
+  }
+
+  .section-one, .section-two, .section-three {
+    width: 33%;
+  }
+
+  .section-one h3, .section-two h3,
+  .section-three h3 {
+  	padding: 10px 30px;
+    display: flex;
+    justify-content: flex-start;
+  }
+
   .section-two {
     border-left: 1px solid #eee;
   	border-right: 1px solid #eee;
   }
 
-  .section-one h3 {
-  	/* padding: 10px 0; */
+
+
+  .menu, .reviews, .address {
+    padding: 0 15px;
   }
 
+header {
+  justify-content: space-between;
+  flex-flow: row;
+}
   header h1 {
   	margin: 0;
   	padding: 38px 0;
